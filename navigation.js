@@ -7,15 +7,15 @@ import SurveySelection from './screens/SurveySelection';
 import SurveyMood from './screens/SurveyMood';
 import SurveyAction from './screens/SurveyAction';
 import MeditationScreen from './screens/MeditationScreen';
-import HomeScreen from './screens/Home';
+// import HomeScreen from './screens/HomeScreen';
 
 const Stack = createNativeStackNavigator();
 
 export default function RootApp() {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="HomeScreen">
-                <Stack.Screen name="HomeScreen" component={HomeScreen} />
+            <Stack.Navigator initialRouteName="SurveySelection">
+                {/* <Stack.Screen name="HomeScreen" component={HomeScreen} /> */}
                 <Stack.Screen name="SurveySelection" component={SurveySelection} />
                 <Stack.Screen name="SurveyMood" component={SurveyMood} />
                 <Stack.Screen name="SurveyAction" component={SurveyAction} />
